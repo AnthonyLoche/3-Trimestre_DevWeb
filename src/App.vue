@@ -13,4 +13,7 @@ import Footer from "./components/Footer.vue";
 </template>
 
 <style scoped>
+*{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 </style>
