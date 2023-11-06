@@ -1,7 +1,5 @@
 <script>
-  function ola(){
-    alert("Olá, seja bem vindo a Tony Company");
-  }
+
 </script>
 
 
@@ -13,6 +11,8 @@
   <nav id="header">
     <a href="">Inicio</a>
     <a href="">Catálogo</a>
+    <router-link to="/catalogo">asd</router-link>
+    <router view></router>
     <a href="">Contato</a>
     <label for="">
     <input type="text" placeholder="Search">
