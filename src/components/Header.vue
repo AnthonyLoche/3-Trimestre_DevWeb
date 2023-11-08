@@ -10,9 +10,8 @@
   
   <nav id="header">
     <a href="">Inicio</a>
-    <a href="">Catálogo</a>
-    <router-link to="/catalogo">asd</router-link>
-    <router view></router>
+    <router-link to="/catalogo">Catalogo</router-link>
+   
     <a href="">Contato</a>
     <label for="">
     <input type="text" placeholder="Search">
@@ -20,7 +19,8 @@
   </label>
   </nav>
 </div>
-</header>
+</header> 
+<router view></router>
 </template>
 
 

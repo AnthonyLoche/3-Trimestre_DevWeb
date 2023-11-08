@@ -22,7 +22,8 @@ footer{
     justify-content: center;
     background-color: #282923;
     bottom: 0;
-    position: absolute;
+    position: relative;
+    margin-top: 20px;
 }
 
 #container2{

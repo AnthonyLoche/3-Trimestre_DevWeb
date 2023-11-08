@@ -22,34 +22,7 @@
                     <li>Olimpkus</li>
                     <li>Fila</li>
                     <li>New Balance</li>
-                
             </div>
-            </div>
-            </ul>
-        </div>
-        <div>
-            <a href="" class="navbar" id="Esportes">Esportes</a>
-            <ul id="Esportes">
-                <div class="item">
-                <li>Basquete</li>
-                <li>Futebol</li>
-                <li>Voleibol</li>
-                <li>Tenis de Mesa</li>
-                <li>Academia e Fitness</li>
-            </div>
-            <div class="item">
-                <li>Natação</li>
-                <li>Handebol</li>
-                <li>Corrida</li>
-                <li>E-Sports</li>
-                <li>Pesca</li>
-            </div>
-            <div class="item">
-                <li>Skate</li>
-                <li>Atletismo</li>
-                <li>Musculação</li>
-                <li>Bicicleta</li>
-                <li>Jogos de Mesa</li>
             </div>
             </ul>
         </div>
@@ -71,16 +44,6 @@
                 <li>mbf</li>
                 <li>mbf</li>
                 <li>mbf</li>
-            </ul>
-        </div>
-        <div>
-            <a href="" class="navbar" id="Roupa">Roupas</a>
-            <ul id="Roupas">
-                <li>kol</li>
-                <li>kol</li>
-                <li>kol</li>
-                <li>kol</li>
-                <li>kol</li>
             </ul>
         </div>
         <div>
@@ -161,23 +124,6 @@ ul#Tenis {
     grid-template-columns: repeat(8, 1fr);
 }
 
-a#Esportes:hover + ul#Esportes {
-    display: grid;
-    transition: 1s;     
-}
-
-ul#Esportes {
-    position: absolute;
-    background-color: #282923;
-    width: 100%;
-    color: white;
-    height: 120px;
-    margin-top: 14px;
-    left: 0;
-    display: none;
-    grid-template-columns: repeat(8, 1fr);
-}
-
 a#Masculinos:hover + ul#Masculinos {
     display: grid;
     transition: 1s;     
@@ -201,23 +147,6 @@ a#Feminino:hover + ul#Femininos {
 }
 
 ul#Femininos {
-    position: absolute;
-    background-color: #282923;
-    width: 100%;
-    color: white;
-    height: 120px;
-    margin-top: 14px;
-    left: 0;
-    display: none;
-    grid-template-columns: repeat(8, 1fr);
-}
-
-a#Roupa:hover + ul#Roupas {
-    display: grid;
-    transition: 1s;     
-}
-
-ul#Roupas {
     position: absolute;
     background-color: #282923;
     width: 100%;
