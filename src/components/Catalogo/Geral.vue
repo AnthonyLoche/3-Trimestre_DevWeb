@@ -1,8 +1,11 @@
 <script setup>
-
+import Header from "../../components/Header.vue";
+import Navbar from "../../components/Navbar.vue";
 </script>
 
 <template>
+    <Header />
+    <Navbar />
     <div id="principal">
         <div class="item">
             <img src="../Catalogo/ImgsCatalogo/ChuteiraMasc.png" width="100%" alt="">

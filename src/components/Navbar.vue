@@ -3,7 +3,7 @@
 
 <template>
     <nav>
-        <div>
+        <div class="divNavs">
             <a href="" class="navbar" id="Tenis">Tenis</a>
             <ul id="Tenis">
                 <div class="item">
@@ -26,54 +26,64 @@
             </div>
             </ul>
         </div>
-        <div>
+        <div class="divNavs">
             <a href="" class="navbar" id="Masculinos">Masculinos</a>
             <ul id="Masculinos">
-                <li>des</li>
-                <li>des</li>
-                <li>des</li>
-                <li>des</li>
-                <li>des</li>
+                <div class="item">
+                    <li><h4>Calçados Masculinos Mais buscados</h4></li>
+                    <div class="containerLis">
+                    <li>Botas de Trabalho</li>
+                    <li>Tenis para Esportes</li>
+                    <li>Tenis Casual</li>
+                </div>
+                </div>
             </ul>
         </div>
-        <div>
+        <div class="divNavs">
             <a href="" class="navbar" id="Feminino">Femininos</a>
             <ul id="Femininos">
-                <li>mbf</li>
-                <li>mbf</li>
-                <li>mbf</li>
-                <li>mbf</li>
-                <li>mbf</li>
+                <div class="item">
+                    <li><h4>Calçados Mais Buscados</h4></li>
+                    <div class="containerLis">
+                    <li>Calçados Masculinos</li>
+                    <li>Calçados Femininos</li>
+                    <li>Calçados Infantis</li>
+                </div>
+            </div>
             </ul>
         </div>
-        <div>
+        <div class="divNavs">
             <a href="" class="navbar" id="Marca">Marcas</a>
             <ul id="Marcas">
-                <li>ptg</li>
-                <li>ptg</li>
-                <li>ptg</li>
-                <li>ptg</li>
-                <li>ptg</li>
+                <div class="item">
+                    <li><h4>Genero</h4></li>
+                    <li>Calçados Masculinos</li>
+                    <li>Calçados Femininos</li>
+                    <li>Calçados Infantis</li>
+                </div>
+        
             </ul>
         </div>
-        <div>
+        <div class="divNavs">
             <a href="" class="navbar" id="Infantil">Infantil</a>
             <ul id="Infantil">
-                <li>jfd</li>
-                <li>jfd</li>
-                <li>jfd</li>
-                <li>jfd</li>
-                <li>jfd</li>
+                <div class="item">
+                    <li><h4>Genero</h4></li>
+                    <li>Calçados Masculinos</li>
+                    <li>Calçados Femininos</li>
+                    <li>Calçados Infantis</li>
+                </div>
             </ul>
         </div>
-        <div>
+        <div class="divNavs">
             <a href="" class="navbar" id="Acessorios">Acessórios</a>
             <ul id="Acessorios">
-                <li>wsx</li>
-                <li>wsx</li>
-                <li>wsx</li>
-                <li>wsx</li>
-                <li>wsx</li>
+                <div class="item">
+                    <li><h4>Genero</h4></li>
+                    <li>Calçados Masculinos</li>
+                    <li>Calçados Femininos</li>
+                    <li>Calçados Infantis</li>
+            </div>
             </ul>
         </div>
     </nav>
@@ -92,10 +102,13 @@ nav {
 }
 
 a.navbar {
+    display: inline-block;
     color: white;
     text-decoration: none;
     opacity: 0.5;
     border-bottom: 2px solid white;
+    margin-top: 12px;
+
 }
 
 a.navbar:hover {
@@ -107,9 +120,20 @@ li{
     list-style: none;
 }
 
-a#Tenis:hover + ul#Tenis {
+.divNavs{
+    flex-grow: 1;
+    height: 100%;
+    text-align: center;
+}
+.divNavs:hover ul#Tenis, 
+.divNavs:hover ul#Masculinos, 
+.divNavs:hover ul#Femininos, 
+.divNavs:hover ul#Marcas, 
+.divNavs:hover ul#Infantil , 
+.divNavs:hover ul#Acessorios{
     display: grid;
-    transition: 1s;     
+    transition: 1s;  
+    
 }
 
 ul#Tenis {
@@ -124,10 +148,7 @@ ul#Tenis {
     grid-template-columns: repeat(8, 1fr);
 }
 
-a#Masculinos:hover + ul#Masculinos {
-    display: grid;
-    transition: 1s;     
-}
+
 
 ul#Masculinos {
     position: absolute;
@@ -139,11 +160,6 @@ ul#Masculinos {
     left: 0;
     display: none;
     grid-template-columns: repeat(8, 1fr);
-}
-
-a#Feminino:hover + ul#Femininos {
-    display: grid;
-    transition: 1s;     
 }
 
 ul#Femininos {
@@ -158,11 +174,6 @@ ul#Femininos {
     grid-template-columns: repeat(8, 1fr);
 }
 
-a#Marca:hover + ul#Marcas {
-    display: grid;
-    transition: 1s;     
-}
-
 ul#Marcas {
     position: absolute;
     background-color: #282923;
@@ -175,11 +186,6 @@ ul#Marcas {
     grid-template-columns: repeat(8, 1fr);
 }
 
-a#Infantil:hover + ul#Infantil {
-    display: grid;
-    transition: 1s;     
-}
-
 ul#Infantil {
     position: absolute;
     background-color: #282923;
@@ -190,11 +196,6 @@ ul#Infantil {
     left: 0;
     display: none;
     grid-template-columns: repeat(8, 1fr);
-}
-
-a#Acessorios:hover + ul#Acessorios {
-    display: grid;
-    transition: 1s;     
 }
 
 ul#Acessorios {
@@ -216,11 +217,18 @@ ul#Acessorios {
     margin: auto;
     justify-content:  center;
     gap: 5px;
-}
+    padding: 5px;}
 
 .containerLis{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    nav{
+        display: none;
+    }
 }
 
 </style>
