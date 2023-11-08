@@ -1,4 +1,4 @@
-<script>
+<script setup>
 
 </script>
 
@@ -21,7 +21,7 @@
 
 </template>
 
-<style>
+<style scoped>
 
 #principal{
     display: grid;

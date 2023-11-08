@@ -1,26 +1,24 @@
-<script>
-
+<script setup>
 </script>
 
 
-<template>
+ <template>
   <header>
     <div id="container">
     <h1>Tony Company</h1>
   
   <nav id="header">
-    <a href="">Inicio</a>
+    <router-link to="/home">Início</router-link>
     <router-link to="/catalogo">Catalogo</router-link>
-   
-    <a href="">Contato</a>
+    <router-link to="/catalogo">Contato</router-link>
+    
     <label for="">
     <input type="text" placeholder="Search">
-      <button type="submit">🔎</button>
+      <button type="submit">aa</button>
   </label>
   </nav>
 </div>
-</header> 
-<router view></router>
+</header>
 </template>
 
 
