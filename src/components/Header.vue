@@ -29,7 +29,7 @@
 </template>
 
 
-<style >
+<style scoped >
 header {
   width: 100%;
   height: 70px;

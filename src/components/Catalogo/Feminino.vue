@@ -1,8 +1,12 @@
-<script>
-
+<script setup>
+import Header from "../../components/Header.vue";
+import Navbar from "../../components/Navbar.vue";
+import Footer from "../../components/Footer.vue";
 </script>
 
 <template>
+    <Header />
+    <Navbar />
     <div id="CatalogoFeminino">
         <div class="itemFem">
             <img src="../Catalogo/ImgsCatalogo/CalçadoFem.png" width="80%" alt="">
@@ -53,9 +57,10 @@
             <button class="add">Add Cart</button>
         </div>
     </div>
+    <Footer />
 </template>
 
-<style>
+<style scoped>
     #CatalogoFeminino{
         display: grid;
         max-width: 1024px;
