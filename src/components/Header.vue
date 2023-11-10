@@ -2,10 +2,10 @@
 <template>
   <header>
     <div id="container">
-      <h1>Tony Company</h1>
+      <h1 id="titulo">Tony Company</h1>
 
       <nav id="header">
-        <router-link to="/">Início</router-link>
+        <router-link to="/">Home</router-link>
         <router-link to="/catalogo">Catalogo</router-link>
         <router-link to="/catalogo">Contato</router-link>
 
@@ -93,6 +93,10 @@ p#menu {
     opacity: 1;
     transition: 0.7s;
     scale: 1.6;
+  }
+
+  h1#titulo {
+    margin-left: 10px;
   }
 }
 

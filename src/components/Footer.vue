@@ -33,4 +33,16 @@ footer{
     justify-content: space-between;
     width: 1000px;   
 }
+
+@media screen and (max-width: 600px) {
+  footer{
+  flex-direction: column;
+  height: 200px;
+  }
+  #container2{
+    width: 300px;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
 </style>
