@@ -8,7 +8,7 @@
         <router-link to="/">Home</router-link>
         <router-link to="/catalogo">Catalogo</router-link>
         <router-link to="/catalogo">Contato</router-link>
-
+        <router-link to="/login">Login</router-link>
         <label for="">
           <input type="text" placeholder="Search">
         </label>
@@ -21,6 +21,7 @@
         <router-link to="/">Início</router-link>
         <router-link to="/catalogo">Catalogo</router-link>
         <router-link to="/catalogo">Contato</router-link>
+        <router-link to="/login">Login</router-link>
       </nav>
     </div>
 
@@ -134,6 +135,8 @@ p#menu {
 </style>
 
 <script setup>
+import { RouterLink } from 'vue-router';
+
 let aberto = false;
 function sidebar() {
   let sidebar = document.getElementById("sidebar");
