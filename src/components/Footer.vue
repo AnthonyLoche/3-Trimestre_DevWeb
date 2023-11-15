@@ -6,8 +6,8 @@
   <footer>
     <div id="container2">
     <h1>Tony Company</h1>
-    <p>&copy;</p>
-    <p>EU</p>
+    <p>Todos os Direitos Reservados &copy;</p>
+    <p>Anthony Gabriel Loche Dos Reis</p>
     </div>
   </footer>
 </template>

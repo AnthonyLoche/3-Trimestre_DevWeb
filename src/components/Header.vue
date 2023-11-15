@@ -7,7 +7,7 @@
       <nav id="header">
         <router-link to="/">Home</router-link>
         <router-link to="/catalogo">Catalogo</router-link>
-        <router-link to="/catalogo">Contato</router-link>
+        <router-link to="/contato">Contato</router-link>
         <router-link to="/login">Login</router-link>
         <label for="">
           <input type="text" placeholder="Search">
@@ -18,9 +18,9 @@
 
     <div id="sidebar">
       <nav id="sidebar">
-        <router-link to="/">Início</router-link>
+        <router-link to="/">Home</router-link>
         <router-link to="/catalogo">Catalogo</router-link>
-        <router-link to="/catalogo">Contato</router-link>
+        <router-link to="/contato">Contato</router-link>
         <router-link to="/login">Login</router-link>
       </nav>
     </div>
@@ -102,34 +102,45 @@ p#menu {
 }
 
 #sidebar {
-  display: block;
-  z-index: 10;
-  position: absolute;
-  top: -100%;
+  display: none;
+  z-index: 5;
   width: 200px;
-  left: 0;
   height: 100%;
   background-color: #282923;
+  top: 0;
+  transition: 0.5s;
+  position: absolute;
+  left: 0;
+  color: white;
+}
+
+nav#sidebar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 20px auto;
+  z-index: 10;
 }
 
 @keyframes sidebarAi {
-  from {
-    top: -100%;
+  0% {
+    margin-right: 200%;
   }
 
-  to {
-    top: 100%;
+  100% {
+    margin-right: 100%;
   }
 }
 
 
 @keyframes AiSidebar {
   from {
-    top: 100%;
+    margin-right: 100%;
   }
 
   to {
-    top: -100%;
+    margin-right: 200%;
   }
 }
 </style>
@@ -142,10 +153,9 @@ function sidebar() {
   let sidebar = document.getElementById("sidebar");
   if (aberto == false) {
     sidebar.style.display = "block";
-    sidebar.style.animation = "sidebarAi 1s forwards";
     aberto = true;
   } else {
-    sidebar.style.animation = "AiSidebar 1s forwards";
+    sidebar.style.display = "none";
     aberto = false;
   }
 

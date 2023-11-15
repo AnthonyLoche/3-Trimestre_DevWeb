@@ -46,12 +46,11 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1050px;
-    margin: auto;
+    max-width: 1050px;
+    margin: 80px auto;
 }
 
 .maior {
-  position: relative;
   display: flex;
   flex-direction: column;
   background-color: #282923;

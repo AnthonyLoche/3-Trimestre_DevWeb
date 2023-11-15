@@ -7,12 +7,6 @@
             <a href="" class="navbar" id="Tenis">Tenis</a>
             <ul id="Tenis">
                 <div class="item">
-                    <li><h4>Genero</h4></li>
-                    <li>Calçados Masculinos</li>
-                    <li>Calçados Femininos</li>
-                    <li>Calçados Infantis</li>
-                </div>
-                <div class="item">
                     <li><h4>Marcas Mais Buscadas</h4></li>
                     <div class="containerLis">
                     <li>Nike</li>
@@ -27,32 +21,6 @@
             </ul>
         </div>
         <div class="divNavs">
-            <a href="" class="navbar" id="Masculinos">Masculinos</a>
-            <ul id="Masculinos">
-                <div class="item">
-                    <li><h4>Calçados Masculinos Mais buscados</h4></li>
-                    <div class="containerLis">
-                    <li>Botas de Trabalho</li>
-                    <li>Tenis para Esportes</li>
-                    <li>Tenis Casual</li>
-                </div>
-                </div>
-            </ul>
-        </div>
-        <div class="divNavs">
-            <a href="" class="navbar" id="Feminino">Femininos</a>
-            <ul id="Femininos">
-                <div class="item">
-                    <li><h4>Calçados Mais Buscados</h4></li>
-                    <div class="containerLis">
-                    <li>Calçados Masculinos</li>
-                    <li>Calçados Femininos</li>
-                    <li>Calçados Infantis</li>
-                </div>
-            </div>
-            </ul>
-        </div>
-        <div class="divNavs">
             <a href="" class="navbar" id="Marca">Marcas</a>
             <ul id="Marcas">
                 <div class="item">
@@ -62,17 +30,6 @@
                     <li>Calçados Infantis</li>
                 </div>
         
-            </ul>
-        </div>
-        <div class="divNavs">
-            <a href="" class="navbar" id="Infantil">Infantil</a>
-            <ul id="Infantil">
-                <div class="item">
-                    <li><h4>Genero</h4></li>
-                    <li>Calçados Masculinos</li>
-                    <li>Calçados Femininos</li>
-                    <li>Calçados Infantis</li>
-                </div>
             </ul>
         </div>
         <div class="divNavs">

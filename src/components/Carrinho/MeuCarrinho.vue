@@ -7,9 +7,11 @@ import { limparCarrinho } from '../../_data/carrinho';
 function formatarPreco(preco) {
   return 'R$ ' + preco.toFixed(2).replace('.', ',')
 }
+
+
 </script>
 
-<template>
+<template>  
   <div class="carrinho">
     <h2>Meu carrinho</h2>
     <div class="wrap-carrinho">
@@ -42,6 +44,7 @@ function formatarPreco(preco) {
       <p class="carrinho-total">Total: {{ formatarPreco(carrinho.total) }}</p>
     </div>
   </div>
+ 
 </template>
 
 <style scoped>
@@ -124,4 +127,6 @@ function formatarPreco(preco) {
     display: none;
   }
 }
+
+
 </style>

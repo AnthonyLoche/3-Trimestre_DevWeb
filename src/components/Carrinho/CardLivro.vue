@@ -10,6 +10,7 @@ const emit = defineEmits(['adicionarAoCarrinho'])
 function formatarPreco(preco) {
   return 'R$ ' + preco.toFixed(2).replace('.', ',')
 }
+
 </script>
 
 <template>
@@ -24,15 +25,10 @@ function formatarPreco(preco) {
     </div>
     <div class="card-buttons-livros">
       <div class="center">
-      <m-button
-        @click="emit('adicionarAoCarrinho', props.livro)"
-        text="Adicionar ao carrinho"
-      ></m-button>
+      <m-button @click="emit('adicionarAoCarrinho', props.livro), adicionado()"
+        text="Adicionar ao carrinho"></m-button>
     </div>
-      <div class="center">
-      <m-button text="Compartilhar" />
-    </div>
-    </div>
+   </div>
   </div>
 </template>
 
@@ -93,5 +89,6 @@ function formatarPreco(preco) {
   justify-content: center;
   align-items: center;
 }
+
 
 </style>
