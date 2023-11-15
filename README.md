@@ -1,6 +1,16 @@
-# vuedevweb
+# Vue Dev Web
 
 This template should help get you started developing with Vue 3 in Vite.
+
+# Modulos Node Usados
+
+Express 
+Nodemon
+Sequelize
+Mysql2
+Express-session
+Bcrypt
+Body-parser
 
 ## Recommended IDE Setup
 

@@ -13,20 +13,19 @@ import Footer from '../components/Footer.vue';
 		<input type="checkbox" id="chk" aria-hidden="true">
 
 			<div class="login">
-				<form class="form">
-					<label for="chk" aria-hidden="true">Log in</label>
+				<form class="form" action="/catalogo" method="post">
+					<label for="chk" aria-hidden="true">Login</label>
 					<input class="input" type="email" name="email" placeholder="Email" required="">
-					<input class="input" type="password" name="pswd" placeholder="Password" required="">
+					<input class="input" type="password" name="password" placeholder="Password" required="">
 					<button id="login">Log in</button>
 				</form>
 			</div>
 
       <div class="register">
-				<form class="form">
-					<label for="chk" aria-hidden="true">Register</label>
-					<input class="input" type="text" name="txt" placeholder="Username" required="">
+				<form class="form" action="http://localhost:8090/cadastrar" method="post">
+					<label for="chk" aria-hidden="true">Registrar</label>
 					<input class="input" type="email" name="email" placeholder="Email" required="">
-					<input class="input" type="password" name="pswd" placeholder="Password" required="">
+					<input class="input" type="password" name="password" placeholder="Password" required="">
 					<button id="register">Register</button>
 				</form>
 			</div>
