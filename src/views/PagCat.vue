@@ -1,16 +1,14 @@
 <script setup>
 import Header from "../components/Header.vue";
-import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
-import ListagemLivros from "../components/Carrinho/ListagemLivros.vue"
+import ListagemTenis from "../components/Carrinho/ListagemTenis.vue"
 import MeuCarrinho from '../components/Carrinho/MeuCarrinho.vue'
 </script>
 
 <template>
     <Header />
-    <Navbar />
     <div id="organization">
-        <ListagemLivros />
+        <ListagemTenis />
         <MeuCarrinho />
     </div>
     <Footer />

@@ -1,4 +1,4 @@
-export const livros = [
+export const itens = [
   {
     id: 1,
     title: 'Nike Air Jordan 1',
@@ -8,10 +8,10 @@ export const livros = [
   },
   {
     id: 2,
-    title: 'Adidas Superstar',
-    marca: 'Adidas',
-    price: 250,
-    img: '../../src/midia/AdidasSuperstar.png'
+    title: 'Kd Trey 5 Ix',
+    marca: 'Nike',
+    price: 399.99,
+    img: '../../src/midia/KD.png  '
   },
   {
     id: 3,
@@ -22,10 +22,10 @@ export const livros = [
   },
   {
     id: 4,
-    title: 'Adidas Breaknet',
-    marca: 'Adidas',
-    price: 199.99,
-    img: '../../src/midia/Breaknet.png'
+    title: 'Kyrie 7',
+    marca: 'Nike',
+    price: 1300,
+    img: '../../src/midia/Kyrie7.webp'
   },
   {
     id: 5,
@@ -36,10 +36,10 @@ export const livros = [
   },
   {
     id: 6,
-    title: 'Air Force One',
+    title: 'Air Jordan Luka 2',
     marca: 'Nike',
-    price: 299.99,
-    img: 'https://th.bing.com/th/id/R.cb032db6189a8fc9fcb466c88a88c5fa?rik=XSo0u4l2zZnOFg&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2ftransparent-nike%2ftransparent-nike-12.png&ehk=NmFn8FJpkVjx9woXLQunnsOTeuiXj%2b5lPTWeaOJowic%3d&risl=&pid=ImgRaw&r=0'
+    price: 959.99,
+    img: '../../src/midia/Luka2.webp'
   },
   {
     id: 7,
@@ -50,9 +50,9 @@ export const livros = [
   },
   {
     id: 8,
-    title: 'Mizuno Cool Ride',
-    marca: 'Mizuno',
-    price: 215,
-    img: '../../src/midia/CoolRide.png'
+    title: 'Lamelo Ball MB.01',
+    marca: 'Puma',
+    price: 899.99,
+    img: '../../src/midia/Lamelo.webp'
   },
 ]

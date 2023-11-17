@@ -5,7 +5,7 @@
 <template>
   <footer>
     <div id="container2">
-    <h1>Tony Company</h1>
+    <h1>Dunk Shoes</h1>
     <p>Todos os Direitos Reservados &copy;</p>
     <p>Anthony Gabriel Loche Dos Reis</p>
     </div>

@@ -2,7 +2,7 @@
 import MButton from './MButton.vue'
 
 const props = defineProps({
-  livro: Object
+  tenis: Object
 })
 
 const emit = defineEmits(['adicionarAoCarrinho'])
@@ -14,18 +14,18 @@ function formatarPreco(preco) {
 </script>
 
 <template>
-  <div class="card-livro">
-    <div class="card-info-livro">
-      <div class="wrap-livro">
-        <img :src="props.livro.img" alt="Capa do livro" class="capa-livro" />
+  <div class="card-tenis">
+    <div class="card-info-tenis">
+      <div class="wrap-tenis">
+        <img :src="props.tenis.img" alt="Capa do tenis" class="capa-tenis" />
       </div>
-      <p class="titulo-livro">{{ props.livro.title }}</p>
-      <p class="autor-livro">{{ props.livro.author }}</p>
-      <p class="preco-livro">{{ formatarPreco(props.livro.price) }}</p>
+      <p class="titulo-tenis">{{ props.tenis.title }}</p>
+      <p class="autor-tenis">{{ props.tenis.author }}</p>
+      <p class="preco-tenis">{{ formatarPreco(props.tenis.price) }}</p>
     </div>
-    <div class="card-buttons-livros">
+    <div class="card-buttons-tenis">
       <div class="center">
-      <m-button @click="emit('adicionarAoCarrinho', props.livro), adicionado()"
+      <m-button @click="emit('adicionarAoCarrinho', props.tenis), adicionado()"
         text="Adicionar ao carrinho"></m-button>
     </div>
    </div>
@@ -33,7 +33,7 @@ function formatarPreco(preco) {
 </template>
 
 <style scoped>
-.card-livro {
+.card-tenis {
   margin: 5px 10px;
   padding: 10px;
   background-color: #282923;
@@ -46,7 +46,7 @@ function formatarPreco(preco) {
   justify-content: space-between;
 }
 
-.wrap-livro {
+.wrap-tenis {
   display: flex;
   justify-content: center;
   background-color: white;
@@ -55,17 +55,17 @@ function formatarPreco(preco) {
   height: 270px;
   margin: auto;
 }
-.capa-livro {
+.capa-tenis {
   width: 90%;
   max-height: 100%;
   margin: auto;
 }
 
-.card-livro p {
+.card-tenis p {
   margin: 0;
 }
 
-.card-livro .titulo-livro {
+.card-tenis .titulo-tenis {
   font-weight: bold;
   margin-bottom: 5px;
   display: flex;
@@ -76,7 +76,7 @@ function formatarPreco(preco) {
   padding: 3px 0;  
 }
 
-.preco-livro{
+.preco-tenis{
 
   display: flex;
   justify-content: center;

@@ -8,7 +8,6 @@ function formatarPreco(preco) {
   return 'R$ ' + preco.toFixed(2).replace('.', ',')
 }
 
-
 </script>
 
 <template>  
@@ -18,14 +17,14 @@ function formatarPreco(preco) {
       <carrinho-vazio v-if="carrinho.itens.length === 0" />
       <div v-else>
         <div class="item-carrinho" v-for="(item, index) in carrinho.itens" :key="index">
-          <div class="info-livro">
-            <div class="imagem-livro">
-              <img :src="item.img" class="icon-capa-livro" />
+          <div class="info-tenis">
+            <div class="imagem-tenis">
+              <img :src="item.img" class="icon-capa-tenis" />
             </div>
-            <div class="detalhes-livro">
+            <div class="detalhes-tenis">
               <div>
                 <p>{{ item.title }}</p>
-                <p class="info-livro-preco">{{ formatarPreco(item.price) }}/un</p>
+                <p class="info-tenis-preco">{{ formatarPreco(item.price) }}/un</p>
               </div>
               <div>
                 <p>
@@ -56,33 +55,33 @@ function formatarPreco(preco) {
 
 .wrap-carrinho .carrinho-total {
   position: fixed;
-  bottom: 3%;
+  bottom: 11%;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.item-carrinho .info-livro {
+.item-carrinho .info-tenis {
   display: flex;
   margin-bottom: 10px;
 }
 
-.detalhes-livro {
+.detalhes-tenis {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.detalhes-livro p {
+.detalhes-tenis p {
   margin: 0;
 }
 
-.detalhes-livro div {
+.detalhes-tenis div {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-.detalhes-livro input[type='number'] {
+.detalhes-tenis input[type='number'] {
   width: 50px;
   text-align: center;
   border: none;
@@ -91,7 +90,7 @@ function formatarPreco(preco) {
   margin-left: 10px;
 }
 
-.detalhes-livro button {
+.detalhes-tenis button {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -101,11 +100,11 @@ function formatarPreco(preco) {
   margin: 0;
 }
 
-.info-livro-preco {
+.info-tenis-preco {
   margin-left: auto;
 }
 
-.icon-capa-livro {
+.icon-capa-tenis {
   width: 30px;
   margin-right: 10px;
 }

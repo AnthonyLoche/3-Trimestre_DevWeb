@@ -1,12 +1,12 @@
 <script setup>
 import Header from '../components/Header.vue';
-import Navbar from '../components/Navbar.vue';
+
 import Footer from '../components/Footer.vue'; 
 </script>
 
 <template>
     <Header />
-    <Navbar />
+   
     <main id="contato">
         <h3>Contato</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sit est, ipsa veniam illum qui totam voluptatibus facilis! Delectus qui quidem amet ipsa praesentium eligendi neque perspiciatis culpa? Fuga, aut!</p>
@@ -34,6 +34,7 @@ main#contato {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    height: 560px;
     border-radius: 15px 15px 0 0;
 }
 

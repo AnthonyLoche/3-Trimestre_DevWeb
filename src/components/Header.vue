@@ -2,13 +2,13 @@
 <template>
   <header>
     <div id="container">
-      <h1 id="titulo">Tony Company</h1>
+      <h1 id="titulo">Dunk Shoes</h1>
 
       <nav id="header">
         <router-link to="/">Home</router-link>
         <router-link to="/catalogo">Catalogo</router-link>
         <router-link to="/contato">Contato</router-link>
-        <router-link to="/login">Login</router-link>
+        <router-link to="/login">Sing In</router-link>
         <label for="">
           <input type="text" placeholder="Search">
         </label>
@@ -21,7 +21,7 @@
         <router-link to="/">Home</router-link>
         <router-link to="/catalogo">Catalogo</router-link>
         <router-link to="/contato">Contato</router-link>
-        <router-link to="/login">Login</router-link>
+        <router-link to="/login">Sing In</router-link>
       </nav>
     </div>
 
