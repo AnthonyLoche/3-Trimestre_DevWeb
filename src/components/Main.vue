@@ -3,27 +3,28 @@
 </script>
 
 <template>
-    <main>
-        <div id="boasVindas">
-            <h1>Home</h1>
-            <p>Seja bem-vindo(a) à Dunk Shoes!</p>
-            <p>A loja pra você achar o seu tênis de basquete</p>
-        </div>
-        <router-link to="/catalogo">
-        <div id="promocao">
-            <img src="../midia/Promocao.png" id="imgPromocao" alt="">
-        </div>
-    </router-link>
-        <h3 id="unicos">Tenis Unicos</h3>
-        <section id="especiais">
+    <section id="boasVindas">
+        <article id="bemVindo">
+            <h2>BEM VINDO A DUNK SHOES</h2>
+            <p>A loja pra você comprar e Dunkar!</p>
 
-            <div class="especial">
-                <p>Air Jordan 4 Eminem</p>
-                <img src="../midia/AirJordanOne.png" alt="" class="imgEspecial">
-            </div>
-            <div class="especial"><img src="../midia/AirJordanOne.png" alt="" class="imgEspecial"></div>
-            <div class="especial"><img src="../midia/AirJordanOne.png" alt="" class="imgEspecial"></div>
-            <div class="especial"><img src="../midia/AirJordanOne.png" alt="" class="imgEspecial"></div>
+            <router-link to="/login" id="saiba">Saiba Mais</router-link>
+
+        </article>
+
+    </section>
+    <main>
+        <section id="oferta">
+            <h3>Ofertas da Semana</h3>
+            <p class="jordan">Air Jordan 4 Eminem</p>
+            <p class="jordan">De: <strike>R$1300,00</strike></p>
+            <p class="jordan">Por: R$800,00</p>
+            <img src="../midia/JordanEminem.png" class="cem" alt="">
+        </section>
+
+        <section id="cliente">
+            <h3>Já é um cliente, então faça o login aqui, senão cadastre-se:</h3>
+            <router-link to="/login" id="login">Login / Cadastre-Se</router-link>
         </section>
     </main>
 </template>
@@ -39,71 +40,86 @@ main {
 }
 
 #boasVindas {
+    width: 100%;
+    height: 70vh;
+    background-image: url(../midia/Fundo.png);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    text-align: center;
+    color: white;
 }
 
-#promocao {
-    width: 90%;
+article#bemVindo {
+    background-color: #282923;
+    width: 500px;
+    padding: 60px;
+    text-align: center;
     height: 300px;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
-    padding: 20px;
-    border-bottom: 2px solid #282923;
-    margin: auto;
+    border: 1px solid white;
 }
 
-img#imgPromocao {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
+a#saiba {
+    text-decoration: none;
+    background-color: white;
+    color: #282923;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 15px auto;
 }
 
-section#especiais {
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+a#saiba:hover {
+    transition: 0.5s;
+    scale: 1.1;
 }
 
-.especial {
-    width: 200px;
-    height: 200px;
-    border-radius: 30px;
+#cliente {
+    margin: 20px auto;
+    color: white;
+    padding: 30px;
     background-color: #282923;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-    padding: 20px;
-    color: white;
-    margin: 30px auto;
 }
 
-img.imgEspecial {
-    width: 100%;
-    height: 200px;
-    border-radius: 10px;
-}
-
-h3#unicos {
-    margin: 10px auto;
+a#login {
+    text-decoration: none;
+    background-color: white;
     color: #282923;
-    font-size: 2rem;
-    border-radius: 30px;
     padding: 10px;
-    box-shadow: 2px 2px 10px 2px #24004628;
+    border-radius: 15px;
+    margin: 15px auto;
 }
 
-router-link {
+section#oferta{
+    border-radius: 15px;
+    width: 65%;
+    margin: 10px auto;
+    background-size: cover;
+}
+
+section#oferta h3{
+    color: white;
+    background-color: #282923;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    margin: 10px auto;
+    padding: 15px;
+    font-size: 30pt;
+}
+
+img.cem{
     width: 100%;
-    margin: auto;
-    }
+}
+
+p.jordan{
+    text-align: center;
+    font-size: 15pt;
+}
 </style>
