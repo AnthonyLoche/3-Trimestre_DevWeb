@@ -55,4 +55,11 @@ export const itens = [
     price: 899.99,
     img: '../../src/midia/Lamelo.webp'
   },
+  {
+    id: 9,
+    title: 'Air Jordan 4 Eminem',
+    marca: 'Nike',
+    price: 800,
+    img: '../../src/midia/Eminem.jpg'
+  }
 ]

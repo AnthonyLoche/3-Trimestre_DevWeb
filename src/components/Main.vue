@@ -80,12 +80,13 @@ a#saiba:hover {
 #cliente {
     margin: 20px auto;
     color: white;
-    padding: 30px;
+    padding: 15px;
     background-color: #282923;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 1000px;
 }
 
 a#login {
