@@ -150,4 +150,8 @@ label {
   background-color: #282923;
 }
 
+Footer{
+  position: absolute;
+}
+
 </style>

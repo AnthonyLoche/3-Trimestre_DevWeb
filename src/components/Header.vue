@@ -9,7 +9,7 @@
         <router-link to="/catalogo">Catalogo</router-link>
         <router-link to="/contato">Contato</router-link>
         <router-link to="/login">Sing In</router-link>
-        <label for="">
+        <label>
           <input type="text" placeholder="Search">
         </label>
       </nav>
@@ -22,6 +22,9 @@
         <router-link to="/catalogo">Catalogo</router-link>
         <router-link to="/contato">Contato</router-link>
         <router-link to="/login">Sing In</router-link>
+        <label for="">
+          <input type="text" placeholder="Search">
+        </label>
       </nav>
     </div>
 
@@ -142,7 +145,57 @@ nav#sidebar{
   to {
     margin-right: 200%;
   }
+
 }
+
+.searchBox {
+  display: flex;
+  max-width: 230px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: #2f3640;
+  border-radius: 50px;
+  position: relative;
+}
+
+.searchButton {
+  color: white;
+  position: absolute;
+  right: 8px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
+  border: 0;
+  display: inline-block;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+/*hover effect*/
+button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+  transform: translateY(-3px);
+}
+/*button pressing effect*/
+button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  padding: 24px 46px 24px 26px;
+}
+
+
+
+
 </style>
 
 <script setup>
@@ -160,6 +213,7 @@ function sidebar() {
   }
 
 }
+
 
 </script>
 

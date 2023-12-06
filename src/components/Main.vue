@@ -8,7 +8,7 @@
             <h2>BEM VINDO A DUNK SHOES</h2>
             <p>A loja pra você comprar e Dunkar!</p>
 
-            <router-link to="/login" id="saiba">Saiba Mais</router-link>
+            <router-link to="/" id="saiba">Saiba Mais</router-link>
 
         </article>
 
@@ -41,7 +41,7 @@
             </div>
             <div class="itemOpcoes">
                 <p class="opcoesTenis">Asics</p>
-                <img src="../midia/asics.png" class="cem" alt="">
+                <img src="../midia/asics.png" style="margin: auto; margin-top: 40px;" class="cem" alt="">
             </div>
         </section>
     </main>
@@ -70,7 +70,7 @@ main {
 
 article#bemVindo {
     background-color: #282923;
-    width: 500px;
+    width: 80%;
     padding: 60px;
     text-align: center;
     height: 300px;
@@ -79,6 +79,7 @@ article#bemVindo {
     flex-direction: column;
     justify-content: center;
     border: 1px solid white;
+    gap: 30px;
 }
 
 a#saiba {
@@ -104,7 +105,7 @@ a#saiba:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 1000px;
+    width: 60%;
 }
 
 a#login {
@@ -145,7 +146,7 @@ p.jordan{
 #opcoes{
     width: 100%;
     display: flex;
-    
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
